@@ -18,9 +18,10 @@ body {
 }
 
 .ecran {
-    height: 92vh;
+    height: calc(100vh - 100px);
     width: 100%;
     display: flex;
+    border-radius: 10%;
 }
 
 section {
@@ -32,17 +33,10 @@ section {
     align-items: center;
 }
 
-/* ecran 1 */
-.ecran1 {
-    width: 100%;
-
-
-
-}
-
 header {
     width: 100%;
-    background-color: #fff;
+    height: calc(100vh - 100px);
+    background-color: rgba(188, 179, 177, 0.512);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -51,14 +45,36 @@ header {
 
 }
 
-h3 {
-    color: rgb(4, 3, 10);
+/* menu navigation */
+.photo {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.photo img {
+    width: 90px;
+    border: 0px solid;
+    border-radius: 50%;
+
+}
+h2{
     text-align: center;
     align-items: center;
     flex: content;
+    justify-content: center;
+    display: flex;
+
+}
 
 
 
+h3 {
+
+    text-align: center;
+    align-items: center;
+    flex: content;
 }
 
 P {
@@ -70,42 +86,141 @@ P {
 
 }
 
+/* ecran 1 */
+.ecran1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    background-color: #8f89899b;
+    
+}
+.ecran1 .savoir{
+    width: 100%;
+}
+
+
+
+
 /* ecran 2 */
 .ecran2 {
     width: 100%;
-    background-color: cyan;
+    background-color: #8f89899b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
 
+.ecran2 img {
+    width: 150px;
+    height: auto;
 }
 
 /* ecran 3*/
 .ecran3 {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    background-color: darkorange;
+    background-color: #8f89899b;
     margin: 2px;
+    justify-content: flex-start;
+
+}
+
+.h3W{
+    margin: 0;
+    font-size: 100px;
+    color: #f7f8f8;
+    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc,
+        0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc,
+        0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+
+}
+
+.ecran3 .contained {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+
+}
+
+.ecran3 .contained .container {
+    display: flex;
+    flex-direction: column;
+    background-color: #8f89899b;
+    border-radius: 50%;
+    padding: 0 13%;
+    margin: 60px 0;
+}
+
+.ecran3 .contained .container .top {
+    display: flex;
+
+}
+
+.ecran3 .contained .container .top h3 {
+
+    font-size: 28px;
+}
+
+.ecran3 .contained .container .down {
+
 }
 
 /* ecran 4*/
 .ecran4 {
     width: 100%;
-    background-color: rgb(138, 100, 157);
+    background-color: #8f89899b;
 }
 
 /* ecran 5*/
 .ecran5 {
     width: 100%;
-    background-color: deeppink;
+    background-color: #8f89899b;
 }
 
 /* ecran 6*/
 .ecran6 {
     width: 100%;
-    background-color: rgb(192, 111, 91);
+    background-color: #8f89899b;
+    /* ecran 7*/
+}
+
+.ecran7 {
+    width: 100%;
+    background-color: #8f89899b;
 
 }
 
-/* menu navigation */
+/*ecran 8*/
+.ecran8 img {
+    width: 400px;
+    height: 400px;
+}
+
+.ecran8 {
+    width: 100%;
+    background-color: #8f89899b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+
+
+
+
+/* navbar */
+
 nav {
     height: 100px;
+    width: 100%;
+    position: fixed;
 }
 
 ul {
@@ -115,26 +230,123 @@ ul {
     align-content: center;
     height: 100%;
     list-style: none;
-
 }
 
 li {
     margin: 0 10px;
 }
 
-img {
-    width: 100%;
+h3{
+    margin: 0;
+    font-size: 100px;
+    color: #424139;
+    text-shadow: 0 1px 0 #32312b, 0 2px 0 #32312b, 0 3px 0 #32312b,
+        0 4px 0 #32312b, 0 5px 0 #32312b, 0 6px 0 #32312b, 0 7px 0 #32312b,
+        0 8px 0 #32312b, 0 9px 0 #32312b, 0 50px 30px rgba(0, 0, 0, 0.8);
 }
 
-.savoir {
-    width: 800px;
-    height: auto;
+.white {
+    margin: 0;
+    font-size: 100px;
+    color: #f7f8f8;
+    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc,
+        0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc,
+        0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
 }
 
-.photo {
-    position: absolute;
-    width: 100px;
-    height: 200px;
-    top: 10px;
-    left: 0;
+.black {
+    margin: 0;
+    font-size: 100px;
+    color: #424139;
+    text-shadow: 0 1px 0 #32312b, 0 2px 0 #32312b, 0 3px 0 #32312b,
+        0 4px 0 #32312b, 0 5px 0 #32312b, 0 6px 0 #32312b, 0 7px 0 #32312b,
+        0 8px 0 #32312b, 0 9px 0 #32312b, 0 50px 30px rgba(0, 0, 0, 0.8);
+}
+.red {
+    margin: 0;
+    font-size: 100px;
+    color: #d83b0d;
+    text-shadow: 0 1px 0 #ae3214, 0 2px 0 #ae3214, 0 3px 0 #ae3214,
+        0 4px 0 #ae3214, 0 5px 0 #ae3214, 0 6px 0 #ae3214, 0 7px 0 #ae3214,
+        0 8px 0 #ae3214, 0 9px 0 #ae3214, 0 50px 30px rgba(106, 29, 6, 0.7);
+}
+
+
+
+
+
+
+
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin: 20px 40px auto 0;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display:none;
+}
+
+@media (max-width:952px){
+    label.logo{
+        font-size: 40px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width:858px){
+    .checkbtn{
+        display: block;
+        text-align: right;
+    }
+
+    
+    nav{
+        padding: 0 20px;
+    }
+
+    label.logo{
+        width: 90%;
+        text-align: center;
+    }
+    nav ul{
+        display: inline-block;
+        position:fixed;
+        width: 100%;
+        height: 100vh;
+        background: #96989aaf;
+        top:120px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        width: 100%;
+        margin: 0;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #05be4c;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+    .photo{
+        display: none;
+    }
 }
