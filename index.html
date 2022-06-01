@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/097058085d.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('1FqoP5t6-wxmr9R6b');
+        })();
+    </script>
     <title>mon Cv</title>
 </head>
 
@@ -31,21 +38,16 @@
                     <li><a>Formation</a></li>
                     <li><a>Compétences</a></li>
                     <li><a>Portofolio</a></li>
+                    <li><a>Mon Cv</a></li>
                     <li><a>Me contacter</a></li>
                 </ul>
             </nav>
-
         </header>
-
-
-
-    </div>
 
     <!--ecran 1 en savoir plus -->
     <div class="ecran ecran1">
         <div class="savoir">
             <h3 class="black">En Savoir Plus</h3>
-
         </div>
     </div>
 
@@ -55,15 +57,15 @@
         <h3 class="h3W">Qui Je Suis</h3>
 
     </div>
-
-
-
-    <!--ecran 3 valeur, objetif,Passion -->
+    <!--ecran 3 formation-->
     <div class="ecran ecran3">
+        <h3 class="black"> Formation </h3>
+    </div>
+
+    <div class="ecran ecran4">
         <div class="title">
             <h3 class="h3W">Mes Compétences</h3>
         </div>
-
         <div class="contained">
             <div class="container">
                 <div class="top">
@@ -93,42 +95,78 @@
         </div>
     </div>
     </div>
-    <!--ecran 4 formation-->
-    <div class="ecran ecran4">
-        <h3> Formation </h3>
-    </div>
+    <!--ecran 5-->
 
-    <!--ecran 5 CV-->
     <div class="ecran ecran5">
-        <h3> CV </h3>
+
+        <h3 class="black">Portofolio</h3>
         <p></p>
-        <h2>Telecharger</h2>
 
     </div>
     <!--ecran 6-->
     <div class="ecran ecran6">
-        <h3>Parcours </h3>
-        <p></p>
+        <h3 class="h3W">Mon Cv</h3>
+
     </div>
+
 
     <div class="ecran ecran7">
-        <h3 class="h3W">Portofolio</h3>
-        <p></p>
-
-    </div>
-
+        <div class="container">
+            <div class="top">
+                <h2 class="black">Telecharger</h2>
+            </div>
+            <div class="down">
+                <h2 class="black">css</h2>
+            </div>
+        </div>
+        <div class="container">
+            <div class="top">
+                <h2 class="black">Javascript</h2>
+            </div>
+        </div>
+    </div> 
+    <!--ecran 7-->
 
     <div class="ecran ecran8">
-        <img src="/assets/contacts.png" alt="image contacts.png">
-        <h3>Me contacter</h3>
+        <img src="/assets/contacts.png" alt="">
+        <h3 class="h3W">Me contacter</h3>
+
+        <!-- <div id="result-form">
+        </div> -->
+        <div class="contain-tout">
+            <div class="form-container">
+                <form method="post" id="contact-form">
+                    <div>
+                        <label for="nom">Nom : *</label>
+                        <input type="text" name="nom" id="nom" required minlength="3" maxlength="20">
+                        <span class="error"></span>
+                    </div>
+                    <div>
+                        <label for="email">Adresse email : *</label>
+                        <input type="email" name="email" id="email" minlength="6" maxlength="50">
+                        <span class="error"></span>
+                    </div>
+                    <div>
+                        <label for="telephone">Téléphone :</label>
+                        <input type="text" name="telephone" id="telephone">
+                        <span class="error"></span>
+                    </div>
+                    <div>
+                        <label for="message">Message : *</label>
+                        <textarea name="message" id="message" name="message" required minlength="10"
+                            maxlength="250"></textarea>
+                        <span class="error"></span>
+                    </div>
+                    <div>
+                        <input class="btn" id="submit" type="submit" value="Envoyer">
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
-
-
-
-
-
-
+</div>
 </body>
+
 <footer>
     <script src="script.js"></script>
 </footer>

@@ -26,3 +26,17 @@ function changerCurseur(numLien)
 {
     lienMenu[numLien].style.cursor = 'pointer';
 }
+
+function success(){
+    // message pour l'utilisateur
+    lemessage.innerHTML ="Message envoyé ! <br>Nous vous recontacterons dès que possible.";
+    //suppression du contenu des champs du formulaire
+    nom.value = "";
+    email.value = "";
+    telephone.value = "";
+    message.value = "";
+    }
+    function failed(){
+    lemessage.style.color = 'red';
+    lemessage.innerHTML ="Une erreur s'est produite,<br>veuillez réessayer.";
+    }
