@@ -92,15 +92,20 @@ P {
 
 /* -------------------------------------------------------- ecran 1 ------------------------------------------------ */
 .ecran1 {
+   
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
     align-content: center;
     width: 100%;
-    background-color: #8f89899b;
-
-    background-color: silver;
+    
+    
+    /* background-color: #8f89899b;
+    background-color: silver; */
+    background-image: url('assets/developpeur-web.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .ecran1 .savoir {
@@ -111,13 +116,20 @@ P {
 
 /* -------------------------------------- ecran 2-------------------------------------------- */
 .ecran2 {
-    width: 100%;
+   
     background-color: silver;
     display: flex;
-
+    
     justify-content: center;
-
+    
     align-content: center;
+    
+    width: 100%; 
+    background-color: #8f89899b;
+    background-color: silver;
+    background-image: url('assets/dev.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .ecran2 img {
@@ -129,10 +141,14 @@ P {
 .ecran3 {
     display: flex;
     flex-direction: column;
+    background-image: url('assets/dev_1.png');
     width: 100%;
-    background-color: silver;
+    /* background-color: silver; */
     margin: 2px;
     justify-content: flex-start;
+
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
@@ -178,13 +194,18 @@ P {
 /* ------------------------------------------------------------ ecran 4-----------------------------------------------*/
 .ecran4 {
     width: 100%;
-    background-color: silver;
-    border-radius: 0%;
+    /* background-color: silver; */
+    border-color: #000;
+    border-radius: 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:url(assets/mes_compétences.png);
+    
 }
 
 .ecran4 .contained .container .top h3 {
     font-size: 2rem;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 
 }
 
@@ -196,9 +217,9 @@ P {
 .ecran4 .contained .container {
     display: flex;
     flex-direction: column;
-    background-color: silver;
-    border-radius: 50%;
-    padding: 0 13%;
+    /* background-color: rgba(214, 178, 178, 0.726); */
+    border-radius: 50%; 
+     padding: 0 13%;
     margin: 60px 0;
 }
 
@@ -216,7 +237,34 @@ P {
 /*  ----------------------------------------------------------------ecran 6--------------------------------------*/
 .ecran6 {
     width: 100%;
-    background-color: #8f89899b;
+   
+    color: rgb(0, 0, 0);
+    background-color: #dddddd;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('assets/cv2.png');
+    
+}
+
+
+.ecran6 p{
+    font-size:medium;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+.ecran6 .red {
+    
+    margin: 0;
+    font-size: 100px;
+    color: #d83b0d;
+    text-shadow: 0 1px 0 #ae3214, 0 2px 0 #ae3214, 0 3px 0 #ae3214,
+     0 4px 0 #ae3214, 0 5px 0 #ae3214, 0 6px 0 #ae3214, 0 7px 0 #ae3214,           
+     0 8px 0 #ae3214, 0 9px 0 #ae3214, 0 50px 30px rgba(106, 29, 6, 0.7);
+    
 }
 
 /* -------------------------------------------------------------- ecran 7 -------------------------------------*/
@@ -234,18 +282,23 @@ P {
 }
 
 /* ------------------------------------------------------------ecran 8------------------------------------------*/
-.ecran8 img {
+.ecran7 img {
     position: absolute;
-    width: 750px;
+    height: 650px;
+    width: 675px;
 }
 
-.ecran8 {
+.ecran7 {
     width: 100%;
     background: linear-gradient(to right, #000 0% , #fff 100%);
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
+}
+
+.ecran7 .contain-tout .form-container form div input, textarea{
+    color: white;
 }
 
 /* -------------------------------------------------- Ajout pour formulaire ------------------------------------ */
@@ -631,14 +684,7 @@ h3 {
         0 8px 0 #32312b, 0 9px 0 #32312b, 0 50px 30px rgba(0, 0, 0, 0.8);
 }
 
-.red {
-    margin: 0;
-    font-size: 100px;
-    color: #d83b0d;
-    text-shadow: 0 1px 0 #ae3214, 0 2px 0 #ae3214, 0 3px 0 #ae3214,
-        0 4px 0 #ae3214, 0 5px 0 #ae3214, 0 6px 0 #ae3214, 0 7px 0 #ae3214,
-        0 8px 0 #ae3214, 0 9px 0 #ae3214, 0 50px 30px rgba(106, 29, 6, 0.7);
-}
+
 
 
 .checkbtn {
@@ -721,3 +767,4 @@ h3 {
         display: none;
     }
 }
+
